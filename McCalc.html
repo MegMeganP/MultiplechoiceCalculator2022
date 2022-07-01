@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Amazing multiple choice calculator that teaches kids and helps them improve their math skills and is also fun for adults to aid in staying sharp.">
+        <meta name="keywords" content="multiple choice calculator,standard calculator,quiz,math,kids fun,educational,stay sharp,cognitive improvement,addition subtraction multiplication division,arithmetic">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multiple Choice Calculator</title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js" async></script>
+    </head>
+    <body><!--calculator elements-container and buttons-->
+        <div class="container" id="refresh">
+            <div class="calc">
+                <input type="text" id="screenText" placeholder="0" maxlength="10">
+                <button onclick="allClear()" id="btnAC">AC</button>
+                <button onclick="del()">Del</button>
+                <button onclick="displayItem('/')">/</button>
+                <button onclick="displayItem(7)">7</button>
+                <button onclick="displayItem(8)">8</button>
+                <button onclick="displayItem(9)">9</button>
+                <button onclick="displayItem('*')">*</button>
+                <button onclick="displayItem(4)">4</button>
+                <button onclick="displayItem(5)">5</button>
+                <button onclick="displayItem(6)">6</button>
+                <button onclick="displayItem('-')">-</button>
+                <button onclick="displayItem(1)">1</button>
+                <button onclick="displayItem(2)">2</button>
+                <button onclick="displayItem(3)">3</button>
+                <button onclick="displayItem('+')">+</button>
+                <button onclick="displayItem('.')">.</button>
+                <button onclick="displayItem(0)">0</button>
+                <button onclick="result()" id="btnEQ" >=</button>
+            </div>
+        </div>
+        <div id="multChoiceModal"><!--pop-up with multiple choice buttons-->
+        <div class="multChoiceModalContent">
+            <span class="close">&times;</span><!--creating the x at corner to close-->
+            <div class="multChoiceButtons">
+                <button id="btnA" class="modalbtn">a</button>
+                <button id="btnB" class="modalbtn">b</button>
+                <button id="btnC" class="modalbtn">c</button>
+            </div>
+            <p>Choose the correct answer.</p>
+        </div>
+        </div>
+        <footer class="footerContainer">  <!--footer makes navigating pages screens of app easy-->
+            <div onclick="window.location.href='index.html'" class="ftrItem">Home</div>
+            <div onclick="window.location.href='McCalc.html'" class="ftrItem">Multiple Choice Calculator</div>
+            <div onclick="window.location.href='standCalc.html'" class="ftrItem">Standard Calculator</div>
+            <div onclick="window.location.href='about.html'" class="ftrItem">About</div>
+            <div onclick="window.location.href='about.html#contact'" class="ftrItem">Contact</div>
+            <div onclick="window.location.href='about.html#share'" class="ftrItem">Share on Social Media!</div>
+            <div class="copyright">Megan Perry :: Maryville University :: SWDV 620 :: Summer 2022</div>
+        </footer>
+        <header>Multiple Choice Calculator</header>       
+    </body>
+</html>  <!--Megan Perry, Maryville University, SWDV 620, Summer 2022-->

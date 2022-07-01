@@ -1,0 +1,175 @@
+*{  /*getting the overall styles in-this file is currently for the multiple choice calculator*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:darkseagreen;
+}
+
+.container{  /*holds the calculator*/
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: honeydew;
+}
+
+.calc{
+    box-shadow: 6px 6px 13px lightblue, 6px 6px 13px rgba(0, 0, 0, .15);  /*shadows make things look more 3D, layer them.*/
+    border-radius: 28px;  /*curved edges look more polished*/
+    padding: 16px;
+    display: grid;  /*make a grid layout to get the buttons where they need to be*/
+    grid-template-columns: repeat(4, 25%);
+}
+
+input{
+    grid-column: span 4;  /*merge columns for wide display screen*/
+    height: 68px;
+    width: 258px;
+    box-shadow: inset -6px -6px 13px lightblue, inset 6px 6px 13px rgba(0, 0, 0, .15);  /*3D effect*/
+    border: none;
+    border-radius: 15px;
+    text-align: right;
+    margin: 20px 0px 30px 0px;
+    padding: 20px;
+    font-size: 40px;
+}
+
+#btnAC{  /*All clear button needs to be different-larger (merge columns), different color layers*/
+    grid-column: span 2;
+    background-color: rgba(151, 50, 36, 0.4);
+    
+}   
+
+#btnEQ{  /*equals sign button, needs to be large-merge columns*/
+    grid-column: span 2;
+   
+} 
+
+button{  /*overall button styles*/
+    cursor: pointer;  /*change cursor to indicate to press the buttons*/
+    box-shadow: inset 6px 6px 13px lightblue, 6px 6px 13px rgba(0, 0, 0, .15);
+    border-radius: 15%;  /*curve and soften corners*/
+    border: none;  /*take out the cheesy borders that ruin 3d effect*/
+    height: 50px;
+    margin: 2px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+button:hover{  /*lets you know that you are on a pressable button*/
+    background: rgba(62, 124, 43, 0.5);
+    box-shadow: inset -6px -6px 13px rgb(79, 99, 105), inset 6px 6px 13px rgba(0, 0, 0, .25);
+}
+
+/*Modal styling*/
+#multChoiceModal {  /*Modal-like a blocking pop-up*/
+    display: none; /*It's actually always there but you can't see it-default*/
+    position: fixed;
+    z-index: 1; /*brings it forward or backwards*/
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /*can scroll if needed*/
+    background-color: rgba(0,0,0,0.4); /*black but translucent*/
+}
+  
+.multChoiceModalContent {
+    background-color: darkseagreen;
+    margin: 15% auto; /*15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height:50%;
+}
+  
+
+.close {    /*The Close Button-x in the corner*/
+    background-color: firebrick;
+    color: rgb(155, 140, 140);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.multChoiceButtons {  /*size the container that will hold the mult choice buttons*/
+    height: 95%;
+    display: auto;
+}
+    
+p{  /*The text in the modal*/
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    display: auto;
+}
+
+.modalbtn {  /*style the multiple choice buttons on the modal*/
+    background-color: aliceblue;
+    width: 90%;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: left;
+    font-weight: normal;
+    padding-left: 1em;
+}
+
+/*footer styles*/
+footer{
+    position: fixed;
+    bottom:0;
+    width: 100%
+    
+}
+.footerContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+
+    background-color: darkseagreen;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    
+}
+
+.copyright{
+    grid-column: span 3;
+    font-size: 10px;
+    padding-bottom:0;
+}
+
+
+.ftrItem{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.ftrItem:hover{
+    cursor: pointer;
+    color:darkslategray;
+    text-shadow: 2px 2px honeydew;
+}
+
+/*header styles*/
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: darkseagreen;
+    text-shadow: 1px 1px lightgray;
+    text-align: center;
+    font-weight: bold;
+    padding: 5%;
+    font-size:1.7em;
+}
+
+
+/*Megan Perry, Maryville University, SWDV 620, Summer 2022*/

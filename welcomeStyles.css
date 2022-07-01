@@ -1,0 +1,123 @@
+*{  /*getting the overall styles in-this file is currently for the home and about screens style*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:honeydew;
+}
+
+header{
+    text-shadow: 1px 1px darkseagreen;
+    text-align: center;
+    padding: 5%;
+    font-size:1.5em;
+}
+
+#welcomeBtns{  /*welcome screen buttons to enter calculator screens*/
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top:100px;
+}
+
+button{  /*welcome screen buttons to enter calculator screens*/
+    cursor: pointer;  /*change cursor to indicate to press the buttons*/
+    box-shadow: 6px 6px 13px rgba(0, 0, 0, .15);
+    border-radius: 15px;  /*curve and soften corners*/
+    border-style: outset;
+    border-color: lightgray;
+    height: 50px;
+    margin: 2px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 2%;
+    margin: 5%
+}
+
+button:hover{
+    background-color: darkseagreen;
+    border-style: inset;
+}
+
+/*footer styles*/
+footer{
+    position: fixed;
+    bottom:0;
+    width: 100%
+    
+}
+
+.ftrItem:hover{
+    cursor: pointer;
+    color:darkslategray;
+    text-shadow: 2px 2px honeydew;
+}
+.footerContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    background-color: darkseagreen;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+
+}
+
+.copyright{
+    grid-column: span 3;
+    font-size: 10px;
+    padding-bottom:0;
+    background-color: darkseagreen;
+}
+
+.ftrItem{
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+/*About Page Styles*/
+#contentContainer{
+    min-height: 400px;
+    margin-bottom: 250px;
+    clear: both;
+    padding: 5%;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 25px;
+}
+
+p{
+    margin: 3%;
+}
+
+#quotes{
+    font-style: italic;
+    padding:3%;
+    color:steelblue;
+}
+
+ol{
+    padding: 5%;
+}
+
+#contactUs{
+    text-align: center;
+}
+
+#icons{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    margin-top: 25px;
+}
+
+/*Megan Perry, Maryville University, SWDV 620, Summer 2022*/
