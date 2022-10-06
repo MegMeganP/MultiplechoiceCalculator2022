@@ -378,4 +378,4 @@ function getChoices() {
     }
 }
 
-//Megan Perry, Maryville University, SWDV 620, Summer 2022
+//Megan Perry,  Summer 2022

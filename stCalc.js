@@ -25,7 +25,7 @@ function del(){  //backspace one at a time with slice off the end
     prevText.value=prevText.value.slice(0,-1);
 }
 
-//Megan Perry, Maryville University, SWDV 620, Summer 2022
+//Megan Perry, Summer 2022
 
 
 
